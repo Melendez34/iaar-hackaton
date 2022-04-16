@@ -130,9 +130,14 @@ button:hover {
   width: 35px;
   margin-bottom: 5px;
 }
+.add-btn {
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
 .social-media img {
   width: 14px;
-  margin-bottom: 20px;
+  margin: 20px;
   cursor: pointer;
 }
 
