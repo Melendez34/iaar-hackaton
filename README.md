@@ -1,7 +1,7 @@
 # iaar-hackaton
 Pagina de nuestro Demo Equipo Woz
 
-> Link del Sitio : (http://iaar.hackaton/)
+> Link del Sitio : (https://melendez34.github.io/iaar-hackaton/)
 
 ## Pagina principal de IAAR🏗️
 
