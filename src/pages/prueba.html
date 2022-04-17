@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/icon.png?v=1650126752089"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Iaar</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Iaar</h2>
+        <div class="toggle"></div>
+      </header>
+      <video
+        src="https://cdn.glitch.me/61b7511a-257d-4989-a742-40607c09dd59/explore.mp4?v=1650127358461"
+        muted
+        loop
+        autoplay
+      ></video>
+      <div class="overlay"></div>
+      <div class="row">
+        <div class="col-1">
+          <h2>Torre <br />Mayor</h2>
+          <h3>Paseo de la Reforma</h3>
+          <p>(Oficinas)</p>
+          <h4>$2</h4>
+          <button type="button">
+            Buy Now
+            <img
+              src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/arrow.png?v=1650138850888"
+            />
+          </button>
+        </div>
+        <div class="col-2">
+          <!-- Use it like any other HTML element -->
+          <model-viewer
+            id="model-viewer"
+            alt="Model"
+            src="../models/torreMayor/scene.gltf"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            seamless-poster
+            shadow-intensity="1"
+            camera-controls
+            camera-orbit="55deg"
+            auto-rotate
+            enable-pan
+          ></model-viewer>
+          <div class="color-box"></div>
+        </div>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="#"
+            ><img
+              src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/facebook.png?v=1650125627119"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/twitter.png?v=1650125627118"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/instagram.png?v=1650125627119"
+          /></a>
+        </li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="/src/pages/angelModel.html">Modelos</a></li>
+        <li><a href="/src/pages/blog.html">Blog</a></li>
+        <li><a href="/src/pages/contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+
+    <script src="./src/js/index.js" defer></script>
+  </body>
+</html>

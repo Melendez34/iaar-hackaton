@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/angelModel.css" />
     <link rel="icon" href="assets/angelLogo.png" />
+
     <title>Angel</title>
   </head>
   <body>
@@ -18,24 +19,19 @@
         <nav>
           <ul>
             <li><a href="../../index.html">Home</a></li>
-            <li><a href="#">VR Accessories</a></li>
-            <li><a href="#">Media Remotes</a></li>
-            <li><a href="#">Others</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
           </ul>
         </nav>
-        <img
-          src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/menu.png?v=1650138850963"
-          class="menu-icon"
-        />
       </div>
+      <!-- Fila de primer elemento-->
       <div class="row">
-        <div class="col-1">
-          <h2>Tienda <br />OXXO</h2>
+        <div class="col-1" id="angel">
+          <h2>Angel <br />de la Independencia</h2>
           <h3>Paseo de la Reforma</h3>
-          <p>(Horario: 24/7)</p>
-          <h4>$2</h4>
+          <h4>Disponible</h4>
           <button type="button">
-            Buy Now
+            Eventos
             <img
               src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/arrow.png?v=1650138850888"
             />
@@ -44,6 +40,99 @@
         <div class="col-2">
           <!-- Use it like any other HTML element -->
           <model-viewer
+            id="model-viewer"
+            bounds="tight"
+            enable-pan
+            src="https://cdn.glitch.global/a61e6da7-1133-493a-a4fb-81d6fd13f2f5/AnyConv.com__AngelIndepend_AE3D.glb?v=1650088996453"
+            ar
+            ar-modes="scene-viewer webxr quick-look"
+            camera-controls
+            environment-image="neutral"
+            poster="https://cdn.glitch.global/a61e6da7-1133-493a-a4fb-81d6fd13f2f5/poster%20(1).webp?v=1650087129567"
+            shadow-intensity="1"
+            auto-rotate
+          ></model-viewer>
+          <div class="color-box"></div>
+        </div>
+      </div>
+      <!-- Segundo elemento-->
+      <div class="row">
+        <div class="col-1">
+          <h2>Torre <br />Mayor</h2>
+          <h3>Paseo de la Reforma (Centro)</h3>
+          <h4>Disponible</h4>
+          <button type="button">
+            Eventos
+            <img
+              src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/arrow.png?v=1650138850888"
+            />
+          </button>
+        </div>
+        <div class="col-2">
+          <!-- Use it like any other HTML element -->
+          <model-viewer
+            id="model-viewer"
+            alt="Model"
+            src="../models/torreMayor/scene.gltf"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            seamless-poster
+            shadow-intensity="1"
+            camera-controls
+            camera-orbit="55deg"
+            auto-rotate
+            enable-pan
+          ></model-viewer>
+          <div class="color-box"></div>
+        </div>
+      </div>
+      <!--Tercero Elemento Oxxo-->
+      <div class="row">
+        <div class="col-1">
+          <h2>Palacio <br />de Bellas Artes</h2>
+          <h3>Paseo de la Reforma (Centro)</h3>
+          <h4>Horario: Revisar Disponibilidad</h4>
+          <button type="button">
+            promociones
+            <img
+              src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/arrow.png?v=1650138850888"
+            />
+          </button>
+        </div>
+        <div class="col-2">
+          <!-- Use it like any other HTML element -->
+          <model-viewer
+            id="model-viewer"
+            alt="Model"
+            src="../models/palacioArte/scene.gltf"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            seamless-poster
+            shadow-intensity="1"
+            camera-controls
+            auto-rotate
+            enable-pan
+          ></model-viewer>
+          <div class="color-box"></div>
+        </div>
+      </div>
+      <!--4to Elemento -->
+      <div class="row">
+        <div class="col-1">
+          <h2>Tienda <br />OXXO</h2>
+          <h3>Paseo de la Reforma</h3>
+          <h4>Horario: (24/7)</h4>
+          <button type="button">
+            promociones
+            <img
+              src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/arrow.png?v=1650138850888"
+            />
+          </button>
+        </div>
+        <div class="col-2">
+          <!-- Use it like any other HTML element -->
+          <model-viewer
+            id="model-viewer"
             alt="Model"
             src="../models/oxxo/scene.gltf"
             ar
@@ -51,18 +140,14 @@
             seamless-poster
             shadow-intensity="1"
             camera-controls
+            auto-rotate
             enable-pan
           ></model-viewer>
           <div class="color-box"></div>
-          <div class="add-btn">
-            <img
-              src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/add.png?v=1650138850889"
-              alt="boton +"
-            />
-            <p><small>Add to cart</small></p>
-          </div>
         </div>
       </div>
+
+      <!--Footer con redes sociales-->
       <div class="social-media">
         <img
           src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/facebook.png?v=1650125627119"
@@ -78,7 +163,8 @@
         />
       </div>
     </div>
-    <!-- Import the component -->
+
+    <!--Model Viewer-->
     <script
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
