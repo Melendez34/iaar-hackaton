@@ -20,6 +20,14 @@ header .logo {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+  text-decoration: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #fff;
+  text-decoration: none;
 }
 .toggle {
   position: relative;
@@ -87,6 +95,7 @@ header .logo {
   line-height: 1em;
   text-transform: uppercase;
 }
+
 .text h3 {
   font-size: 4em;
   font-weight: 700;

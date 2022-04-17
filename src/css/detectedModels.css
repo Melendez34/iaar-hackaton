@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 50px;
+  cursor: pointer;
+  margin: 30px 0;
+}
+.menu-icon {
+  width: 25px;
+  cursor: pointer;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+}
+nav ul li a:hover {
+  color: #ff5ea2;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+.col-1 {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+.col-1 h2 {
+  font-size: 54px;
+}
+.col-1 h3 {
+  font-size: 30px;
+  color: #707070;
+  font-weight: 100;
+  margin: 20px 0 10px;
+}
+.col-1 p {
+  font-size: 16px;
+  color: #b7b7b7;
+  font-weight: 100;
+}
+
+.col-1 h4 {
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+.menu,
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  background: #033c91;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.menu__link {
+  left: 50%;
+  display: block;
+  padding: 14px;
+  color: black;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+.menu__link h2 {
+  font-size: 18px;
+  color: white;
+}
+
+.submenu {
+  background: #e7e7e7;
+  height: 0;
+  overflow: visible;
+  transition: all 0.3s;
+}
+
+.container-submenu .submenu {
+  background: black;
+}
+
+.submenu .menu__link:hover {
+  width: 100px;
+  background: blue;
+  color: white;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+@media (max-width: 2500px) {
+  .menu {
+    margin-left: 0;
+    display: flex;
+  }
+  .container-submenu {
+    position: relative;
+  }
+  .submenu {
+    position: absolute;
+    top: 60px;
+    width: 200px;
+    overflow: visible;
+    z-index: 1000;
+    opacity: 0;
+  }
+  .container-submenu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+button {
+  width: 140px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: #ffffff;
+  background: linear-gradient(to right, #03a9f4, #03045e);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+.model-viewer {
+  width: 100vh;
+  height: 500px;
+}
+button img {
+  width: 30px;
+  display: none;
+}
+
+.social-media img {
+  width: 14px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.add-btn img {
+  width: 35px;
+  margin-bottom: 5px;
+}
+
+button:hover img {
+  display: block;
+}
+button:hover {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.col-1::after {
+  content: "";
+  width: 10px;
+  height: 57%;
+  background: linear-gradient(#03a9f4, #03045e);
+  position: absolute;
+  left: -40px;
+  top: 8px;
+}
+.col-2 {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}
+.col-2 .controller {
+  width: 90%;
+}
+.color-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(#03a9f4, #03045e);
+  border-radius: 20px 0 0 20px;
+  height: 100%;
+  width: 80%;
+  z-index: -1;
+  transform: translate(150px);
+}
+
+.add-btn {
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.social-media {
+  text-align: center;
+}
+
+@media only screen and (max-width: 840px) {
+  .row {
+    flex-direction: column-reverse;
+    margin: 50px;
+  }
+  .col-2 {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+  .col-2 .controller {
+    width: 77%;
+  }
+  .color-box {
+    transform: translateX(75px);
+  }
+  .col-1 {
+    flex-basis: 100%;
+  }
+  .col-1 h2 {
+    font-size: 35px;
+  }
+  .col-1 h3 {
+    font-size: 15px;
+  }
+  .model-viewer {
+    width: 300px;
+    height: 300px;
+  }
+}

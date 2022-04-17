@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/detectedModels.css" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/icon.png?v=1650168244585"
+    />
+    <title>Models - Iaar</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="https://iaar.glitch.me/">
+          <img
+            src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/iaarlogo.png?v=1650183822774"
+            class="logo"
+          />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="https://iaar.glitch.me/">Home</a></li>
+            <li><a href="/src/pages/choices.html">Hobbies-Based System</a></li>
+            <li>
+              <a href="https://playground-iaar.surge.sh/">Playground</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="row" id="angel">
+        <div class="col-1">
+          <h2>Ángel <br />de la Independencia</h2>
+          <h3>Paseo de la Reforma</h3>
+          <h4>Disponible</h4>
+
+          <ul class="menu" id="menu">
+            <li class="menu__item container-submenu">
+              <a class="menu__link submenu-btn"
+                ><h2>¿A dónde ir?</h2>
+                <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="submenu">
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/yxtL3Y843T22yCi59"
+                    class="menu__link"
+                    target="_blank"
+                    >Museo del Chocolate</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/7Vntbsdzvj5zBrby5"
+                    class="menu__link"
+                    target="_blank"
+                    >MUBO</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/DBebGbfDe8zgCusy6"
+                    class="menu__link"
+                    target="_blank"
+                    >Deigo Ramen</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/GBHJLsoHps1DC7e17"
+                    class="menu__link"
+                    target="_blank"
+                    >Pasión Café</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <!-- Use it like any other HTML element -->
+          <model-viewer
+            class="model-viewer"
+            bounds="tight"
+            enable-pan
+            src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/angelModel.glb?v=1650180301482"
+            ar
+            ar-modes="scene-viewer webxr quick-look"
+            camera-controls
+            shadow-intensity="1"
+            camera-orbit="161.1deg 54.77deg auto"
+            auto-rotate
+            ><div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">View in your space</button>
+          </model-viewer>
+          <div class="color-box"></div>
+        </div>
+      </div>
+      <!-- Segundo elemento-->
+      <div class="row" id="torre">
+        <div class="col-1">
+          <h2>Torre <br />Mayor</h2>
+          <h3>Paseo de la Reforma (Centro)</h3>
+          <h4>Disponible</h4>
+          <ul class="menu" id="menu">
+            <li class="menu__item container-submenu">
+              <a href="#" class="menu__link submenu-btn"
+                ><h2>¿A dónde ir?</h2>
+                <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="submenu">
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/YQP8sLwBnTzCU4ZA7"
+                    class="menu__link"
+                    target="_blank"
+                    >Museo de Arte Moderno</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/i8gYYHU3TPWXWvet7"
+                    class="menu__link"
+                    target="_blank"
+                    >Estela de luz</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/BjnnKF3H6FbS7ph5A"
+                    class="menu__link"
+                    target="_blank"
+                    >Moshi Moshi</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/gxk6B4emcc3J6EaS7"
+                    class="menu__link"
+                    target="_blank"
+                    >Quebracho</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <!-- Use it like any other HTML element -->
+          <model-viewer
+            class="model-viewer"
+            bounds="tight"
+            enable-pan
+            src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/torremayorModel.glb?v=1650181071867"
+            ar
+            ar-modes="scene-viewer webxr quick-look"
+            camera-orbit="-35.96deg 78.37deg auto"
+            camera-controls
+            environment-image="neutral"
+            shadow-intensity="1"
+            autoplay
+            auto-rotate
+          >
+            <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">View in your space</button>
+          </model-viewer>
+
+          <div class="color-box"></div>
+        </div>
+      </div>
+      <!--Tercero Elemento Bellas Artes-->
+      <div class="row" id="artes">
+        <div class="col-1">
+          <h2>Palacio <br />de Bellas Artes</h2>
+          <h3>Paseo de la Reforma (Centro)</h3>
+          <h4>Horario: Revisar Disponibilidad</h4>
+          <ul class="menu" id="menu">
+            <li class="menu__item container-submenu">
+              <a href="#" class="menu__link submenu-btn"
+                ><h2>¿A dónde ir?</h2>
+                <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="submenu">
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/e3fSS6Bcj5HubV3Z8"
+                    class="menu__link"
+                    target="_blank"
+                    >Museo Bellas Artes</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/Loz2sE6Cp3nENvc4A"
+                    class="menu__link"
+                    target="_blank"
+                    >MIDE</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/fyicAabXKPvTTWtH8"
+                    class="menu__link"
+                    target="_blank"
+                    >MATA C/C</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/xga1FPt6q43MaTnP6"
+                    class="menu__link"
+                    target="_blank"
+                    >La Capilla</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <!-- Use it like any other HTML element -->
+          <model-viewer
+            class="model-viewer"
+            alt="Model"
+            src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/start_pack.glb?v=1650181645903"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            seamless-poster
+            shadow-intensity="1"
+            camera-controls
+            auto-rotate
+            enable-pan
+          ></model-viewer>
+          <div class="color-box"></div>
+        </div>
+      </div>
+      <!--4to Elemento -->
+      <div class="row" id="oxxo">
+        <div class="col-1">
+          <h2>Tienda <br />OXXO</h2>
+          <h3>Paseo de la Reforma</h3>
+          <h4>Horario: (24/7)</h4>
+          <ul class="menu" id="menu">
+            <li class="menu__item container-submenu">
+              <a href="#" class="menu__link submenu-btn"
+                ><h2>¿A dónde ir?</h2>
+                <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="submenu">
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/DqzNnoH72SPu8haeA"
+                    class="menu__link"
+                    target="_blank"
+                    >Museo Rural Diego Rivera</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/uKTHwjqoLbXewxew8"
+                    class="menu__link"
+                    target="_blank"
+                    >LAB Arte Alameda</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/gBH4g2tFk3bGcXKW7"
+                    class="menu__link"
+                    target="_blank"
+                    >El Caifán</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/LBmd5wHbKCAxz6Yn7"
+                    class="menu__link"
+                    target="_blank"
+                    >Sonora Grill</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <!-- Use it like any other HTML element -->
+          <model-viewer
+            class="model-viewer"
+            alt="Model"
+            src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/oxxo.glb?v=1650176009024"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            seamless-poster
+            shadow-intensity="1"
+            camera-controls
+            auto-rotate
+            enable-pan
+          ></model-viewer>
+          <div class="color-box"></div>
+        </div>
+      </div>
+
+      <div class="row" id="semaforo">
+        <div class="col-1">
+          <h2>Semáforo <br />CDMX</h2>
+          <h3>Paseo de la Reforma (Centro)</h3>
+          <h4>Horario: Revisar Disponibilidad</h4>
+          <ul class="menu" id="menu">
+            <li class="menu__item container-submenu">
+              <a href="#" class="menu__link submenu-btn"
+                ><h2>¿A dónde ir?</h2>
+                <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="submenu">
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/e3fSS6Bcj5HubV3Z8"
+                    class="menu__link"
+                    target="_blank"
+                    >Museo Bellas Artes</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/Loz2sE6Cp3nENvc4A"
+                    class="menu__link"
+                    target="_blank"
+                    >MIDE</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/fyicAabXKPvTTWtH8"
+                    class="menu__link"
+                    target="_blank"
+                    >MATA C/C</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/xga1FPt6q43MaTnP6"
+                    class="menu__link"
+                    target="_blank"
+                    >La Capilla</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <!-- Use it like any other HTML element -->
+          <model-viewer
+            class="model-viewer"
+            alt="Model"
+            src="https://cdn.glitch.me/61b7511a-257d-4989-a742-40607c09dd59/semaforos.glb?v=1650181682722"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            seamless-poster
+            shadow-intensity="1"
+            camera-controls
+            auto-rotate
+            enable-pan
+          ></model-viewer>
+          <div class="color-box"></div>
+        </div>
+      </div>
+      <div class="row" id="artes">
+        <div class="col-1">
+          <h2>Auditorio<br />Nacional</h2>
+          <h3>Paseo de la Reforma (Centro)</h3>
+          <h4>Horario: Revisar Disponibilidad</h4>
+          <ul class="menu" id="menu">
+            <li class="menu__item container-submenu">
+              <a href="#" class="menu__link submenu-btn"
+                ><h2>¿A dónde ir?</h2>
+                <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="submenu">
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/e3fSS6Bcj5HubV3Z8"
+                    class="menu__link"
+                    target="_blank"
+                    >Museo Bellas Artes</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/Loz2sE6Cp3nENvc4A"
+                    class="menu__link"
+                    target="_blank"
+                    >MIDE</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/fyicAabXKPvTTWtH8"
+                    class="menu__link"
+                    target="_blank"
+                    >MATA C/C</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="https://goo.gl/maps/xga1FPt6q43MaTnP6"
+                    class="menu__link"
+                    target="_blank"
+                    >La Capilla</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <!-- Use it like any other HTML element -->
+          <model-viewer
+            class="model-viewer"
+            bounds="tight"
+            enable-pan
+            src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/auditorionacionalModel.glb?v=1650182490900"
+            ar
+            ar-modes="scene-viewer webxr quick-look"
+            camera-controls
+            poster="poster.webp"
+            shadow-intensity="1"
+            animation-name="Running"
+            autoplay
+            environment-image="neutral"
+            camera-orbit="-0.3568deg 69.75deg auto"
+            auto-rotate
+          >
+          </model-viewer>
+          <div class="color-box"></div>
+        </div>
+      </div>
+      <!-- Links redes sociales-->
+      <div class="social-media">
+        <a href="https://www.facebook.com/digitallabagencymx" target="_blank"
+          ><img
+            src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/facebook.png?v=1650125627119"
+        /></a>
+        <a href="https://www.instagram.com/digitallab_marketing/" target="_blank"
+          ><img
+            src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/instagram.png?v=1650125627119"
+        /></a>
+        <a
+          href="https://api.whatsapp.com/send/?phone=5216641235981&text=Hola+DLA+por+favor+nos+pueden+ayudar+con+el+marketing+digital+de+nuestra+empresa%3F&app_absent=0"
+          target="_blank"
+          ><img
+            src="https://cdn.glitch.global/61b7511a-257d-4989-a742-40607c09dd59/twitter.png?v=1650125627118"
+        /></a>
+      </div>
+    </div>
+
+    <!-- Import the component -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </body>
+</html>
